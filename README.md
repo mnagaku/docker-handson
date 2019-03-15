@@ -9,7 +9,7 @@ dockerについてのハンズオン用
 
 https://hub.docker.com/signup
 
-### 2：Docker Desktop をインストールしておく
+### 2-1：Docker Desktop をインストールしておく
 
 OSの要件：
 Microsoft Windows 10 Professional または Enterprise 64-bit版
@@ -28,7 +28,7 @@ https://www.docker.com/products/docker-desktop
 
 からインストーラをダウンロードして、インストールしてください。
 
-### 3：Linux 上に Docker 環境を作る
+### 2-2：Linux 上に Docker 環境を作る
 
 Docker Desktop のインストールができない場合、仮想マシン、クラウド上のインスタンス、物理マシン、などの何らかの方法でDocker 作業用の Linux マシンを確保して、その上に Docker 環境を作ります。
 
@@ -49,7 +49,14 @@ https://docs.docker.com/compose/install/
 
 因みに、docker-compose は Docker Desktop に同梱されています。
 
-### 4：Play with Docker を使う
+### 2-3：Play with Docker を使う
 
 Docker Desktop もしくは Docker 作業用の Linux マシンを準備できなかった場合でも、Docker の開発元が提供する Play with Docker を使えば、Docker ID でログインして、自分用のお試し環境を4時間使うことができます。この環境は起動して4時間経過すると、自動的に削除されます。
 Play with Docker は、EC2上に確保されたリソースで提供されますが、リソース量が固定で運用されており、時間帯によっては満員で使えない場合があります。
+
+<a href="http://play-with-docker.com?stack=https://raw.githubusercontent.com/mnagaku/docker-handson/master/docker-compose.yml"><img src="https://raw.githubusercontent.com/play-with-docker/stacks/master/assets/images/button.png" /></a>
+
+----
+
+## 公式チュートリアルをやってみる
+
