@@ -86,7 +86,7 @@ FreeBSD jail(2000)、Solaris Containers(2005)、LXC(2008)、Docker(2013)
 コンテナオーケストレーションとそのサービス化：コンテナ基盤をクラウドサービス化
 Kubernetes(2014)、Docker Swarm(2014)、ECS(2014)
 
-<img src='https://g.gravizo.com/svg?
+<img src='https://g.gravizo.com/g?
  digraph G {
    仮想マシン -> IaaS;
    仮想マシン -> コンテナ;
