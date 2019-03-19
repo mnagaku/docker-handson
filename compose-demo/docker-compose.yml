@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+  mariadb:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
