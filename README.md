@@ -137,6 +137,8 @@ Kubernetes(2014)、Docker Swarm(2014)、ECS(2014)
 
 ## 目次
 
+[JupyterNotebook入門](JupyterNotebookIntroduction.ipynb)
+
 [おまじない](おまじない.ipynb)
 
 [基本操作](基本操作.ipynb)
