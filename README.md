@@ -99,3 +99,18 @@ Kubernetes(2014)、Docker Swarm(2014)、ECS(2014)
 コンテナを、軽量な仮想マシンと見なして、サーバプロセスをホストする使い方が、よく行われています。例えば、AWSのECSで、webアプリケーションのサーバを動かすような使い方です。
 
 コンテナは、使い捨てしやすい、プロセスを動かすための環境と考えることができるので、特定の処理（実行コマンド）を、その動作環境といっしょにパッケージして、コマンドを動かすための道具にもできます。例えば、AWSのFargateで、バッチ処理を動かすような使い方です。コンテナベースのHPCも、こっちの使い方です。CI（ビルド、テスト）の基盤としても、こっちの使い方です。
+
+----
+
+## このハンズオンで使われているソフトウェア
+
+[OperationHub](https://github.com/NII-cloud-operation/OperationHub)
+：JupyterHubをベースに、LC4RI用に調整された、JupyterNotebookのマルチユーザ環境
+
+[mnagaku/operation-notebook](https://hub.docker.com/repository/docker/mnagaku/operation-notebook)
+：NIIクラウド運用チームが実務で使っているJupyterのコンテナイメージにsshカーネルなどを追加したもの
+
+[sshカーネル](https://github.com/NII-cloud-operation/sshkernel)
+：富士通研究所が開発した、リモートシェルを実現するカーネル
+
+----
