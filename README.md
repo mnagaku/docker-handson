@@ -4,17 +4,25 @@ dockerについてのハンズオン on GCP
 
 ----
 
+## 事前準備
+
+- Docker ID を取得しておく
+
+https://hub.docker.com/signup
+
+----
+
 ## 目次
 
-[JupyterNotebook入門lite](JupyterNotebook入門lite.ipynb)
+[JupyterNotebook入門lite](./JupyterNotebook入門lite.ipynb)
 
-[作業場所をGCP上に構築](作業場所をGCP上に構築.ipynb)
+[作業場所をGCP上に構築](./作業場所をGCP上に構築.ipynb)
 
-[Docker基本操作](Docker基本操作.ipynb)
+[Docker基本操作](./Docker基本操作.ipynb)
 
-[Dockerイメージの作成](dockerfile-demo/Dockerイメージの作成.ipynb)
+[Dockerイメージの作成](./dockerfile-demo/Dockerイメージの作成.ipynb)
 
-[docker-compose](compose-demo/docker-compose.ipynb)
+[docker-compose](./compose-demo/docker-compose.ipynb)
 
 ----
 
