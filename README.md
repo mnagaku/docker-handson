@@ -1,6 +1,6 @@
 # docker-handson
 
-dockerについてのハンズオン on GCP
+dockerについてのハンズオン on AWS
 
 ----
 
@@ -16,7 +16,7 @@ https://hub.docker.com/signup
 
 [JupyterNotebook入門lite](./JupyterNotebook入門lite.ipynb)
 
-[作業場所をGCP上に構築](./作業場所をGCP上に構築.ipynb)
+[作業場所をAWS上に構築](./作業場所をAWS上に構築.ipynb)
 
 [Docker基本操作](./Docker基本操作.ipynb)
 
@@ -36,7 +36,7 @@ https://en.wikipedia.org/wiki/Template:Virtualization_software
 Dockerコンテナ時代の第一章の終わり、そして第二章の展望など  
 https://www.publickey1.jp/blog/17/post_265.html
 
-<img src=https://docs.docker.com/images/VM%402x.png width=300/>
+<img src=https://docs.docker.jp/_images/vm.png width=300/>
 
 仮想マシン：ハードウェアを仮想化して、その上にOSを載せる
 VMware Workstation(1999)、VMware ESX Server(2001)、Xen(2003)、VirtualBox(2007)、KVM(2007)
@@ -44,7 +44,7 @@ VMware Workstation(1999)、VMware ESX Server(2001)、Xen(2003)、VirtualBox(2007
 IaaS：仮想マシン基盤をクラウドサービス化
 EC2(2006)、OpenStack(2010)
 
-<img src=https://docs.docker.com/images/Container%402x.png width=300/>
+<img src=https://docs.docker.jp/_images/container.png width=300/>
 
 コンテナ：OSを仮想化して、その中でプロセスを動かす
 FreeBSD jail(2000)、Solaris Containers(2005)、LXC(2008)、Docker(2013)
@@ -100,6 +100,28 @@ Kubernetes(2014)、Docker Swarm(2014)、ECS(2014)
 
 コンテナは、使い捨てしやすい、プロセスを動かすための環境と考えることができるので、特定の処理（実行コマンド）を、その動作環境といっしょにパッケージして、コマンドを動かすための道具にもできます。例えば、AWSのFargateで、バッチ処理を動かすような使い方です。コンテナベースのHPCも、こっちの使い方です。CI（ビルド、テスト）の基盤としても、こっちの使い方です。
 
+### 5：（番外編）Docker以外のコンテナ環境
+
+Dockerをサーバ用途で使う場合、サーバを制御する人が管理者権限を持っていても、運用上おかしくはありませんが、Dockerをコマンド用途で使う場合、コマンドを使いたい人全員に管理者権限を与えるのは、運用上の問題となりえます。コマンド用途でコンテナを使うなど、コンテナ利用の適用範囲を広げるために、管理者権限を必要としないコンテナ技術が使われ始めています。
+
+#### Rootless Docker
+
+https://docs.docker.com/engine/security/rootless/
+
+Dockerを管理者権限なしに使うための製品。前提条件を満たしていれば、インストールにも管理者権限は不要。
+
+#### Podman
+
+https://podman.io/
+
+赤帽が推す、Dockerと[互換性の高い](https://opencontainers.org/)、管理者権限不要なコンテナ製品。
+
+#### Singularity
+
+https://sylabs.io/singularity/
+
+GPGPUと親和性の高い、管理者権限不要なコンテナ製品。
+
 ----
 
 ## このハンズオンで使われているソフトウェア
@@ -112,5 +134,13 @@ Kubernetes(2014)、Docker Swarm(2014)、ECS(2014)
 
 [sshカーネル](https://github.com/NII-cloud-operation/sshkernel)
 ：富士通研究所が開発した、リモートシェルを実現するカーネル
+
+----
+
+## 公式チュートリアル
+
+[始めましょう（和訳）](https://docs.docker.jp/get-started/toc.html)
+
+[Docker 101 Tutorial](https://www.docker.com/101-tutorial)の[和訳](https://qiita.com/Michinosuke/items/5778e0d9e9c04038903c)
 
 ----
